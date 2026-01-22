@@ -2,83 +2,65 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Bodrum Elektrikçi | 7/24 Elektrik Arıza</title>
-  <meta name="description" content="Bodrum ve çevresinde 7/24 elektrik arıza, tesisat ve bakım hizmeti. Hızlı, güvenilir, uygun fiyatlı.">
+  <title>Fidan Elektrik | Bodrum 7/24 Elektrikçi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      color: #333;
-    }
-
-    header {
-      background: #1f2933;
+      background-image: url('images/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
       color: white;
-      padding: 40px 20px;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      padding: 20px;
     }
 
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #1f2933;
-    }
-
-    .services li {
+    h1 {
+      font-size: 40px;
       margin-bottom: 10px;
     }
 
-    footer {
-      background: #1f2933;
-      color: white;
-      text-align: center;
-      padding: 20px;
+    p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ffc107;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #e0a800;
     }
   </style>
 </head>
 
 <body>
-
-<header>
-  <h1>Fidan Elektrik</h1>
-  <p>Bodrum genelinde 7/24 elektrik arıza, tesisat ve bakım hizmeti</p>
-</header>
-
-<section>
-  <h2>Hizmetlerimiz</h2>
-  <ul class="services">
-    <li>Elektrik arıza tespiti ve onarımı</li>
-    <li>Sigorta ve pano işleri</li>
-    <li>Elektrik tesisatı yenileme</li>
-    <li>Avize, priz ve anahtar montajı</li>
-    <li>Acil elektrikçi hizmeti</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Neden Fidan Elektrik?</h2>
-  <p>
-    Bodrum ve çevresinde yıllardır güvenilir elektrik hizmeti sunuyoruz.
-    Hızlı müdahale, temiz işçilik ve uygun fiyat anlayışıyla çalışıyoruz.
-  </p>
-</section>
-
-<section>
-  <h2>İletişim</h2>
-  <p><strong>Telefon:</strong> 05XX XXX XX XX</p>
-  <p><strong>Hizmet Bölgesi:</strong> Bodrum ve çevresi</p>
-</section>
-
-<footer>
-  <p>© 2026 Fidan Elektrik | Bodrum</p>
-</footer>
-
+  <div class="overlay">
+    <div>
+      <h1>Fidan Elektrik</h1>
+      <p>Bodrum içinde 7/24 elektrik arıza, tesisat ve bakım hizmeti</p>
+      <a class="btn" href="tel:05XXXXXXXXX">Hemen Ara</a>
+    </div>
+  </div>
 </body>
 </html>
