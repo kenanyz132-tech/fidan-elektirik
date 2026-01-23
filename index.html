@@ -2,7 +2,8 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Fidan Elektrik | Bodrum 7/24 Elektrikçi</title>
+  <title>Bodrum Elektrikçi | Fidan Elektrik 7/24 Acil Servis</title>
+  <meta name="description" content="Bodrum genelinde 7/24 elektrik arıza, tesisat ve bakım hizmeti. Fidan Elektrik hızlı, güvenilir ve profesyonel çözüm sunar.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -13,56 +14,148 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      min-height: 100vh;
       color: white;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    header a {
+      margin: 0 10px;
+      padding: 10px 15px;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      background: #ffc107;
+      color: black;
+    }
+
+    .hero {
       min-height: 100vh;
+      background: rgba(0,0,0,0.6);
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 20px;
+      padding-top: 80px;
     }
 
-    h1 {
+    .hero h1 {
       font-size: 48px;
-      margin-bottom: 15px;
-      text-transform: uppercase;
+      margin-bottom: 10px;
     }
 
-    p {
-      font-size: 20px;
+    .hero p {
+      font-size: 22px;
       margin-bottom: 30px;
-      color: #f1f1f1;
     }
 
-    .btn {
+    .buttons a {
       display: inline-block;
-      padding: 15px 35px;
-      background-color: #ffc107;
+      margin: 10px;
+      padding: 15px 30px;
+      background: #ffc107;
       color: black;
       text-decoration: none;
-      font-size: 18px;
       font-weight: bold;
       border-radius: 6px;
     }
 
-    .btn:hover {
-      background-color: #e0a800;
+    section {
+      padding: 60px 20px;
+      background: white;
+      color: black;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
     }
   </style>
 </head>
 
 <body>
-  <div class="overlay">
-    <div style="margin-top: 80px;">
-      <h1>Fidan Elektrik</h1>
-      <p>Bodrum içinde 7/24 elektrik arıza, tesisat ve bakım hizmeti</p>
-      <a class="btn" href="tel:05XXXXXXXXX">Hemen Ara</a>
+
+<header>
+  <a href="#anasayfa">Ana Sayfa</a>
+  <a href="#hakkimizda">Hakkımızda</a>
+  <a href="#hizmetler">Hizmetlerimiz</a>
+  <a href="#iletisim">İletişim</a>
+</header>
+
+<div class="hero" id="anasayfa">
+  <div>
+    <h1>Fidan Elektrik</h1>
+    <p>7/24 Bodrum Elektrikçi – Arıza, Tesisat ve Bakım</p>
+    <div class="buttons">
+      <a href="tel:05XXXXXXXXX">📞 Hemen Ara</a>
+      <a href="https://wa.me/90XXXXXXXXXX" target="_blank">💬 WhatsApp'tan Yaz</a>
     </div>
   </div>
+</div>
+
+<section id="hakkimizda">
+  <h2>Hakkımızda</h2>
+  <div class="content">
+    <p>
+      Fidan Elektrik olarak Bodrum ve çevresinde uzun yıllardır elektrik arıza, tesisat ve bakım hizmetleri sunmaktayız.
+      Amacımız, müşterilerimize hızlı, güvenilir ve kalıcı çözümler sağlamaktır.
+    </p>
+    <p>
+      Elektrik arızaları beklemez. Bu yüzden 7/24 acil servis anlayışıyla çalışıyor, çağrılarınıza en kısa sürede
+      müdahale ediyoruz. Ev, iş yeri, site ve ticari alanlarda profesyonel ekipman ve tecrübemizle hizmet veriyoruz.
+    </p>
+  </div>
+</section>
+
+<section id="hizmetler">
+  <h2>Hizmetlerimiz</h2>
+  <div class="content">
+    <ul>
+      <li>Elektrik arıza tespiti ve onarımı</li>
+      <li>Sigorta atması ve pano arızaları</li>
+      <li>Ev ve iş yeri elektrik tesisatı</li>
+      <li>Aydınlatma sistemleri</li>
+      <li>Priz, anahtar ve kablolama işleri</li>
+      <li>Bakım ve kontrol hizmetleri</li>
+      <li>7/24 acil elektrikçi servisi</li>
+    </ul>
+  </div>
+</section>
+
+<footer id="iletisim">
+  <h2>İletişim</h2>
+  <p>Bodrum ve çevresine 7/24 hizmet vermekteyiz</p>
+  <p>📞 Telefon: 05XXXXXXXXX</p>
+  <p>💬 WhatsApp: 05XXXXXXXXX</p>
+</footer>
+
 </body>
 </html>
