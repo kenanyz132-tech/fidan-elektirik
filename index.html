@@ -2,8 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Bodrum Elektrikçi | Fidan Elektrik 7/24 Acil Servis</title>
-  <meta name="description" content="Bodrum genelinde 7/24 elektrik arıza, tesisat ve bakım hizmeti. Fidan Elektrik hızlı, güvenilir ve profesyonel çözüm sunar.">
+  <title>Fidan Elektrik | Bodrum 7/24 Elektrikçi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -18,145 +17,141 @@
       color: white;
     }
 
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll;
+      }
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.55);
+      min-height: 100vh;
+    }
+
     header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: center;
+      gap: 10px;
       padding: 15px;
-      text-align: center;
-      z-index: 1000;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 10;
     }
 
     header a {
-      margin: 0 10px;
-      padding: 10px 15px;
-      background: rgba(255,255,255,0.1);
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    header a:hover {
-      background: #ffc107;
+      padding: 8px 14px;
+      background: #f5b400;
       color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
     }
 
     .hero {
-      min-height: 100vh;
-      background: rgba(0,0,0,0.6);
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       text-align: center;
-      padding-top: 80px;
+      height: 100vh;
+      padding: 20px;
     }
 
     .hero h1 {
-      font-size: 48px;
+      font-size: 42px;
       margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 22px;
-      margin-bottom: 30px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 30px;
-      background: #ffc107;
-      color: black;
+      padding: 14px 22px;
+      background: #25d366;
+      color: white;
       text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
       font-weight: bold;
-      border-radius: 6px;
+    }
+
+    .buttons a.call {
+      background: #f5b400;
+      color: black;
     }
 
     section {
-      padding: 60px 20px;
-      background: white;
-      color: black;
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
     section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 32px;
-    }
-
-    .content {
-      max-width: 900px;
-      margin: auto;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 30px 10px;
+      color: #f5b400;
+      margin-bottom: 15px;
     }
   </style>
 </head>
 
 <body>
+<div class="overlay">
 
-<header>
-  <a href="#anasayfa">Ana Sayfa</a>
-  <a href="#hakkimizda">Hakkımızda</a>
-  <a href="#hizmetler">Hizmetlerimiz</a>
-  <a href="#iletisim">İletişim</a>
-</header>
+  <header>
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#hizmetler">Hizmetlerimiz</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
+  </header>
 
-<div class="hero" id="anasayfa">
-  <div>
+  <div id="anasayfa" class="hero">
     <h1>Fidan Elektrik</h1>
-    <p>7/24 Bodrum Elektrikçi – Arıza, Tesisat ve Bakım</p>
+    <p>7/24 Bodrum Elektrikçi • Arıza • Tesisat • Bakım</p>
     <div class="buttons">
-      <a href="tel:05XXXXXXXXX">📞 Hemen Ara</a>
-      <a href="https://wa.me/90XXXXXXXXXX" target="_blank">💬 WhatsApp'tan Yaz</a>
+      <a class="call" href="tel:05XXXXXXXXX">Hemen Ara</a>
+      <a href="https://wa.me/90XXXXXXXXXX">WhatsApp’tan Yaz</a>
     </div>
   </div>
+
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>
+      Fidan Elektrik olarak Bodrum ve çevresinde yıllardır 7/24 elektrik arıza,
+      tesisat ve bakım hizmeti sunuyoruz. Hızlı müdahale, temiz işçilik ve
+      güvenilir hizmet bizim temel prensibimizdir.
+    </p>
+  </section>
+
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <p>
+      • Elektrik arıza onarımı<br>
+      • Sigorta ve pano işlemleri<br>
+      • Ev ve iş yeri tesisatı<br>
+      • Aydınlatma kurulumu<br>
+      • Kaçak akım ve topraklama<br>
+      • 7/24 acil servis
+    </p>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>
+      Bodrum genelinde hızlı servis için hemen arayın veya WhatsApp’tan yazın.
+    </p>
+  </section>
+
 </div>
-
-<section id="hakkimizda">
-  <h2>Hakkımızda</h2>
-  <div class="content">
-    <p>
-      Fidan Elektrik olarak Bodrum ve çevresinde uzun yıllardır elektrik arıza, tesisat ve bakım hizmetleri sunmaktayız.
-      Amacımız, müşterilerimize hızlı, güvenilir ve kalıcı çözümler sağlamaktır.
-    </p>
-    <p>
-      Elektrik arızaları beklemez. Bu yüzden 7/24 acil servis anlayışıyla çalışıyor, çağrılarınıza en kısa sürede
-      müdahale ediyoruz. Ev, iş yeri, site ve ticari alanlarda profesyonel ekipman ve tecrübemizle hizmet veriyoruz.
-    </p>
-  </div>
-</section>
-
-<section id="hizmetler">
-  <h2>Hizmetlerimiz</h2>
-  <div class="content">
-    <ul>
-      <li>Elektrik arıza tespiti ve onarımı</li>
-      <li>Sigorta atması ve pano arızaları</li>
-      <li>Ev ve iş yeri elektrik tesisatı</li>
-      <li>Aydınlatma sistemleri</li>
-      <li>Priz, anahtar ve kablolama işleri</li>
-      <li>Bakım ve kontrol hizmetleri</li>
-      <li>7/24 acil elektrikçi servisi</li>
-    </ul>
-  </div>
-</section>
-
-<footer id="iletisim">
-  <h2>İletişim</h2>
-  <p>Bodrum ve çevresine 7/24 hizmet vermekteyiz</p>
-  <p>📞 Telefon: 05XXXXXXXXX</p>
-  <p>💬 WhatsApp: 05XXXXXXXXX</p>
-</footer>
-
 </body>
 </html>
