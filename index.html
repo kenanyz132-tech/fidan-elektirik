@@ -1,160 +1,175 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Fidan Elektrik | Bodrum 7/24 Elektrikçi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fidan Elektrik | 7/24 Bodrum Elektrikçi</title>
 
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url("images/bg.jpg");
-      background-size: cover;
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: white;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    @media (max-width: 768px) {
-      body {
-        background-attachment: scroll;
-      }
+    body {
+      background: #111;
+      color: #fff;
+      scroll-behavior: smooth;
     }
 
-    .overlay {
-      background: rgba(0,0,0,0.55);
-      min-height: 100vh;
-    }
-
+    /* ===== ÜST MENÜ ===== */
     header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: 10;
-}
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+      padding: 10px 0;
+    }
 
-    header a {
-  padding: 8px 12px;
-  background: #f5b400;
-  color: black;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 13px;
-  white-space: nowrap;
-}
-
-    .hero {
+    nav {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      text-align: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      background: rgba(255,255,255,0.15);
+      padding: 8px 14px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    /* ===== HERO ALANI ===== */
+    .hero {
       height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/bg.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       padding: 20px;
     }
 
-    .hero h1 {
-      font-size: 42px;
+    .hero-content h1 {
+      font-size: 38px;
       margin-bottom: 10px;
     }
 
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 20px;
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 25px;
     }
 
     .buttons {
       display: flex;
+      flex-direction: column;
       gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
+      align-items: center;
     }
 
-    .buttons a {
-      padding: 14px 22px;
-      background: #25d366;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .buttons a.call {
+    .btn {
       background: #f5b400;
-      color: black;
+      color: #000;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      width: 220px;
+      text-align: center;
     }
 
+    /* ===== BÖLÜMLER ===== */
     section {
-      padding: 80px 20px;
-      max-width: 900px;
+      padding: 70px 20px;
+      max-width: 1000px;
       margin: auto;
     }
 
     section h2 {
-      color: #f5b400;
-      margin-bottom: 15px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    section p {
+      line-height: 1.6;
+      text-align: center;
+      color: #ddd;
+    }
+
+    /* ===== MOBİL AYAR ===== */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 30px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 
 <body>
-<div class="overlay">
 
-  <header>
+<header>
+  <nav>
     <a href="#anasayfa">Ana Sayfa</a>
     <a href="#hizmetler">Hizmetlerimiz</a>
     <a href="#hakkimizda">Hakkımızda</a>
     <a href="#iletisim">İletişim</a>
-  </header>
+  </nav>
+</header>
 
-  <div id="anasayfa" class="hero">
+<section id="anasayfa" class="hero">
+  <div class="hero-content">
     <h1>Fidan Elektrik</h1>
-    <p>7/24 Bodrum Elektrikçi • Arıza • Tesisat • Bakım</p>
+    <p>7/24 Bodrum Elektrikçi – Arıza, Tesisat ve Bakım</p>
+
     <div class="buttons">
-      <a class="call" href="tel:05XXXXXXXXX">Hemen Ara</a>
-      <a href="https://wa.me/90XXXXXXXXXX">WhatsApp’tan Yaz</a>
+      <a class="btn" href="tel:05XXXXXXXXX">📞 Hemen Ara</a>
+      <a class="btn" href="https://wa.me/905XXXXXXXXX" target="_blank">💬 WhatsApp'tan Yaz</a>
     </div>
   </div>
+</section>
 
-  <section id="hakkimizda">
-    <h2>Hakkımızda</h2>
-    <p>
-      Fidan Elektrik olarak Bodrum ve çevresinde yıllardır 7/24 elektrik arıza,
-      tesisat ve bakım hizmeti sunuyoruz. Hızlı müdahale, temiz işçilik ve
-      güvenilir hizmet bizim temel prensibimizdir.
-    </p>
-  </section>
+<section id="hakkimizda">
+  <h2>Hakkımızda</h2>
+  <p>
+    Fidan Elektrik olarak Bodrum genelinde 7/24 elektrik arıza, bakım ve tesisat
+    hizmeti sunuyoruz. Deneyimli ekibimizle hızlı, güvenli ve kalıcı çözümler
+    üretiyoruz. Müşteri memnuniyeti bizim için reklamdan daha değerlidir.
+  </p>
+</section>
 
-  <section id="hizmetler">
-    <h2>Hizmetlerimiz</h2>
-    <p>
-      • Elektrik arıza onarımı<br>
-      • Sigorta ve pano işlemleri<br>
-      • Ev ve iş yeri tesisatı<br>
-      • Aydınlatma kurulumu<br>
-      • Kaçak akım ve topraklama<br>
-      • 7/24 acil servis
-    </p>
-  </section>
+<section id="hizmetler">
+  <h2>Hizmetlerimiz</h2>
+  <p>
+    Elektrik arızaları, sigorta değişimi, priz ve anahtar montajı, tesisat yenileme,
+    kaçak akım rölesi kurulumu, aydınlatma sistemleri ve tüm elektrik işlerinizde
+    profesyonel destek sağlıyoruz.
+  </p>
+</section>
 
-  <section id="iletisim">
-    <h2>İletişim</h2>
-    <p>
-      Bodrum genelinde hızlı servis için hemen arayın veya WhatsApp’tan yazın.
-    </p>
-  </section>
+<section id="iletisim">
+  <h2>İletişim</h2>
+  <p>
+    Acil durumlar için bizi arayabilir veya WhatsApp üzerinden anında ulaşabilirsiniz.
+    Bodrum’un tüm bölgelerine hızlı servis sağlıyoruz.
+  </p>
+</section>
 
-</div>
 </body>
 </html>
