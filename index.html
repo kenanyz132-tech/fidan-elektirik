@@ -4,217 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fidan Elektrik | 7/24 Bodrum Elektrikçi</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #0f0f0f;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.7);
-      backdrop-filter: blur(6px);
-      z-index: 1000;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 15px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 14px;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.1);
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      background: #f5b400;
-      color: #000;
-    }
-
-    .hero {
-      height: 100vh;
-      background: url("bg.jpg") center / cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hero-content {
-      background: rgba(0,0,0,0.6);
-      padding: 40px;
-      border-radius: 20px;
-      max-width: 600px;
-    }
-
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      background: #f5b400;
-      color: #000;
-      padding: 14px 22px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background: #ffd24d;
-    }
-
-    section {
-      padding: 80px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    section h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      color: #f5b400;
-      font-size: 30px;
-    }
-
-    /* HİZMETLER */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .service-card {
-      background: #1a1a1a;
-      padding: 25px;
-      border-radius: 18px;
-      text-align: center;
-      transition: 0.3s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      background: #222;
-    }
-
-    .service-card h3 {
-      margin-bottom: 10px;
-      color: #f5b400;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      opacity: 0.7;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <nav>
-    <a href="#anasayfa">Ana Sayfa</a>
-    <a href="#hizmetler">Hizmetlerimiz</a>
-    <a href="#hakkimizda">Hakkımızda</a>
-    <a href="#iletisim">İletişim</a>
+<!-- ÜST MENÜ -->
+<header class="header">
+  <nav class="nav">
+    <a href="#hero">Ana Sayfa</a>
+    <a href="#services">Hizmetlerimiz</a>
+    <a href="#about">Hakkımızda</a>
+    <a href="#contact">İletişim</a>
   </nav>
 </header>
 
-<section id="anasayfa" class="hero">
-  <div class="hero-content">
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="overlay">
     <h1>Fidan Elektrik</h1>
     <p>7/24 Bodrum Elektrikçi – Arıza, Tesisat ve Bakım</p>
 
     <div class="buttons">
-      <a class="btn" href="tel:05438606500">📞 Hemen Ara</a>
-      <a class="btn" href="https://wa.me/905438606500" target="_blank">💬 WhatsApp’tan Yaz</a>
+      <a href="tel:05XXXXXXXXX" class="btn call">Hemen Ara</a>
+      <a href="https://wa.me/905XXXXXXXXX" class="btn whatsapp">WhatsApp’tan Yaz</a>
     </div>
   </div>
 </section>
 
-<section id="hizmetler">
+<!-- HİZMETLER -->
+<section class="services" id="services">
   <h2>Hizmetlerimiz</h2>
 
-  <div class="services">
-    <div class="service-card">
-      <h3>⚡ Elektrik Arıza</h3>
-      <p>Ani elektrik kesintileri ve arızalara hızlı müdahale.</p>
+  <div class="service-grid">
+    <div class="card">
+      <img src="images/slide2.jpg">
+      <h3>Elektrik Arızaları</h3>
+      <p>Ani elektrik kesintileri, sigorta atması ve kısa devre sorunları.</p>
     </div>
 
-    <div class="service-card">
-      <h3>🏠 Ev & İş Yeri Tesisatı</h3>
-      <p>Yeni tesisat, yenileme ve güvenli kurulum.</p>
+    <div class="card">
+      <img src="images/slide2.jpg">
+      <h3>Tesisat İşleri</h3>
+      <p>Yeni tesisat, yenileme ve bina içi elektrik altyapısı.</p>
     </div>
 
-    <div class="service-card">
-      <h3>🔌 Sigorta & Pano</h3>
-      <p>Sigorta değişimi ve pano düzenleme.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>💡 Aydınlatma</h3>
-      <p>İç ve dış mekan modern aydınlatma çözümleri.</p>
+    <div class="card">
+      <img src="images/slide2.jpg">
+      <h3>Bakım & Onarım</h3>
+      <p>Periyodik bakım, pano kontrolü ve güvenlik çözümleri.</p>
     </div>
   </div>
 </section>
 
-<section id="hakkimizda">
-  <h2>Neden Fidan Elektrik?</h2>
-  <p style="text-align:center; max-width:800px; margin:auto;">
-    Bodrum genelinde 7/24 hizmet veren Fidan Elektrik,
-    hızlı müdahale, temiz işçilik ve güvenilir çözümler sunar.
-    Elektrik işlerinde güvenlik bizim için zorunluluktur.
+<!-- HAKKIMIZDA -->
+<section class="about" id="about">
+  <h2>Hakkımızda</h2>
+  <p>
+    Fidan Elektrik olarak Bodrum genelinde 7/24 elektrik hizmeti sunuyoruz.
+    Deneyimli ekibimizle arıza, tesisat ve bakım konularında hızlı ve güvenilir
+    çözümler üretiyoruz. Önceliğimiz müşteri memnuniyeti ve güvenliktir.
   </p>
 </section>
 
-<section id="iletisim">
+<!-- İLETİŞİM -->
+<section class="contact" id="contact">
   <h2>İletişim</h2>
-  <p style="text-align:center;">Acil durumlarda hemen ulaşın</p>
+  <p>Bize dilediğiniz zaman ulaşabilirsiniz.</p>
 
-  <div class="buttons" style="margin-top:30px">
-    <a class="btn" href="tel:05438606500">📞 Hemen Ara</a>
-    <a class="btn" href="https://wa.me/905438606500" target="_blank">💬 WhatsApp’tan Yaz</a>
+  <div class="buttons">
+    <a href="tel:05XXXXXXXXX" class="btn call">Hemen Ara</a>
+    <a href="https://wa.me/905XXXXXXXXX" class="btn whatsapp">WhatsApp</a>
   </div>
 </section>
 
 <footer>
-  © 2026 Fidan Elektrik – Tüm Hakları Saklıdır
+  © 2026 Fidan Elektrik – Bodrum
 </footer>
 
 </body>
