@@ -2,41 +2,101 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>7/24 Elektrikçi</title>
+  <title>Fidan Elektrik | 7/24 Elektrikçi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-  <h1>7/24 Elektrikçi</h1>
-  <p>Acil Elektrik Hizmeti</p>
+<!-- ÜST MENÜ -->
+<header class="topbar">
+  <div class="logo">Fidan Elektrik</div>
+
+  <nav class="menu">
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
 </header>
 
-<section class="services">
-  <h2>Hizmetlerimiz</h2>
+<!-- ANA SAYFA -->
+<section id="anasayfa" class="hero">
+  <h1>7/24 Bodrum Elektrikçi</h1>
+  <p>Acil Elektrik • Arıza • Tesisat</p>
 
-  <div class="service-box">
-    <h3>Ev Elektrik Tesisatı</h3>
-    <p>Ev ve daire içi tüm elektrik işleri</p>
-    <a href="ev-elektrik.html">Detayları Gör</a>
-  </div>
-
-  <div class="service-box">
-    <h3>Pano & Sigorta</h3>
-    <p>Sigorta, pano ve kaçak akım işlemleri</p>
-    <a href="pano.html">Detayları Gör</a>
-  </div>
-
-  <div class="service-box">
-    <h3>Aydınlatma</h3>
-    <p>İç ve dış mekan aydınlatma çözümleri</p>
-    <a href="aydinlatma.html">Detayları Gör</a>
+  <div class="hero-buttons">
+    <a href="tel:05555555555">Hemen Ara</a>
+    <a href="https://wa.me/905555555555">WhatsApp</a>
   </div>
 </section>
 
+<!-- HİZMETLER -->
+<section id="hizmetler" class="services">
+  <h2>Hizmetlerimiz</h2>
+
+  <div class="service-card" onclick="toggleDesc(this)">
+    <h3>Elektrik Arıza</h3>
+    <p class="short">Ani elektrik kesintileri ve arızalar</p>
+    <p class="long">
+      Ev ve iş yerlerinde oluşan sigorta atması, priz yanması,
+      kablo sorunları ve kaçak akım problemleri uzman ekibimiz
+      tarafından hızlı ve güvenli şekilde giderilir.
+    </p>
+  </div>
+
+  <div class="service-card" onclick="toggleDesc(this)">
+    <h3>Elektrik Tesisatı</h3>
+    <p class="short">Yeni ve eski tesisat işleri</p>
+    <p class="long">
+      Daire, villa ve iş yerleri için sıfırdan elektrik tesisatı,
+      tesisat yenileme, priz–anahtar montajı ve bakım hizmetleri
+      profesyonel şekilde yapılır.
+    </p>
+  </div>
+
+  <div class="service-card" onclick="toggleDesc(this)">
+    <h3>Aydınlatma</h3>
+    <p class="short">İç ve dış mekan çözümleri</p>
+    <p class="long">
+      Avize montajı, LED aydınlatma, bahçe ve dış cephe ışıklandırma
+      işlemleri estetik ve güvenli biçimde uygulanır.
+    </p>
+  </div>
+</section>
+
+<!-- HAKKIMIZDA -->
+<section id="hakkimizda" class="text-section">
+  <h2>Hakkımızda</h2>
+  <p>
+    Fidan Elektrik olarak Bodrum ve çevresinde uzun yıllardır
+    7/24 elektrik hizmeti sunmaktayız. Önceliğimiz güvenlik,
+    hızlı müdahale ve müşteri memnuniyetidir.
+  </p>
+</section>
+
+<!-- İLETİŞİM -->
+<section id="iletisim" class="text-section dark">
+  <h2>İletişim</h2>
+  <p>📞 0555 555 55 55</p>
+  <p>💬 WhatsApp ile 7/24 ulaşabilirsiniz</p>
+</section>
+
 <footer>
-  <p>© 2026 7/24 Elektrikçi</p>
+  © 2026 Fidan Elektrik
 </footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector(".menu").classList.toggle("show");
+}
+
+function toggleDesc(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
